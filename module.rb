@@ -11,3 +11,17 @@ end
 
 fire_builder = FireBuilder.new
 puts fire_builder.addTwoNumbers(1,3)
+
+
+foo = ""
+foo.extend MathFuncs
+puts foo.addTwoNumbers(1,3)
+
+
+class Bar
+    extend MathFuncs
+end
+
+bar = Bar.new
+puts Bar.addTwoNumbers(1,3)
+puts bar.respond_to? :addTwoNumber
