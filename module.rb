@@ -18,6 +18,13 @@ foo.extend MathFuncs
 puts foo.addTwoNumbers(1,3)
 
 
+foo1 = ""
+class << foo1
+    include MathFuncs
+end
+puts foo1.addTwoNumbers(1,3)
+
+
 class Bar
     extend MathFuncs
 end
